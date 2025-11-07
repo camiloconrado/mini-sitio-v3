@@ -12,5 +12,16 @@
   <main>
     <button id="contact-btn">Enviar</button>
   </main>
+
+  <script>
+  const btn = document.getElementById('contact-btn');
+  if (btn) {
+    btn.addEventListener('click', () => {
+      btn.textContent = 'Enviado';
+      alert('Mensaje enviado correctamente (simulación)');
+    });
+  }
+</script>
+
 </body>
 </html>
